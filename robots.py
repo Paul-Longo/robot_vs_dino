@@ -1,7 +1,16 @@
+from weapons import Weapons
+
 # Robots class
+
+
 class Robots:
-    def __init__(self, name, weapon):
+    ### Methods ###
+    def __init__(self, name, health):
         self.name = name
-        self.health = "100"
-        self.weapon = weapon
-        self.attack_power = "30"
+        self.health = health
+        self.weapon = Weapons()  # calling weapons class
+        # removed attack_power.
+
+   # Unfinished, In progress
+    def __init__(self, dinosaur):
+        self.attack = dinosaur
