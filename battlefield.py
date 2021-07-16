@@ -16,7 +16,7 @@ class Battlefield:
     def run_game(self):
         x = self.display_welcome()
         round = 1
-        while len(self.herd.dinosaurs) or len(self. fleet.robot) > 0:
+        while len(self.dinosaur_herd) or len(self. robot_fleet) > 0:
             print("Get ready to battle!")
             # If dinosaur is chosen. they will have first attack. else robot will have first attack
             if (x == "Dinosuars"):
@@ -83,7 +83,7 @@ class Battlefield:
         elif prompt_target == 3:
             target = robot3
             return target
-        # return target to defeated list
+        # return ftarget to defeated list
         if target.health <= 0:
             self.robot_defeated.append(target)
 
