@@ -12,17 +12,17 @@ class Herd:
     def create_herd(self):
         dinosaur1 = Dinosaurs()
         dinosaur1.name = "Barney"
-        dinosaur1.health = 90
+        dinosaur1.health = 100
         dinosaur1.attack_power = 30
 
         dinosaur2 = Dinosaurs()
         dinosaur2.name = "Littlefoot"
-        dinosaur2.health = 85
+        dinosaur2.health = 100
         dinosaur2.attack_power = 35
 
         dinosaur3 = Dinosaurs()
         dinosaur3.name = "Bowser"
-        dinosaur3.health = 80
+        dinosaur3.health = 100
         dinosaur3.attack_power = 40
 
         # each dinosaur will be passed into the class Dinosaur with their name, health, and attack power.
