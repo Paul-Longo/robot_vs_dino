@@ -7,6 +7,7 @@ class Fleet:
         self.robots = self.create_fleet()
 
 # Construct a fleet with names of each robot and health levels
+# Each robot will equal Robot class. Name and health to be called into the Dinosar class.
     def create_fleet(self):
         robot1 = Robots()
         robot1.name = "T-100"
@@ -20,5 +21,6 @@ class Fleet:
         robot3.name = "Megatronus Prime"
         robot3.health = 100
 
+        # each dinosaur will be passed into the class Dinosaur with their name, health, and attack power.
         robots = [robot1, robot2, robot3]
         return robots

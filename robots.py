@@ -9,8 +9,8 @@ class Robots:
         self.name = name
         self.health = health
         self.weapon = Weapons()  # calling weapons class
-        # removed attack_power.
 
-   # Unfinished, In progress
-    def __init__(self, dinosaur):
-        self.attack = dinosaur
+# method to have dinosaur attack robots
+    def robot_attack(self, attack_dinosaur):
+        # dinosaur loses health from robot attack depending on their weapons attack power.
+        attack_dinosaur.health -= self.weapon.attack_power
